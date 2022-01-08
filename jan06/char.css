@@ -1,0 +1,66 @@
+body{
+    border: 1px solid black;
+    box-shadow: 3px 3px 0px black;
+    margin-top: 1%;
+    margin-left: 23%;
+    margin-bottom: 43%;
+    margin-right: 17%;
+    position: sticky;
+   
+}
+#pag{
+    border: 1px solid rgb(204, 99, 99);
+    box-shadow: 0 2px -1px rgba(0, 0, 0, 3);
+    height: 1%;
+    width: 75%;
+    margin-left: 12%;
+    margin-top: 8%;
+    margin-bottom: 6%;
+    margin-right: 6%;
+    
+
+    
+    border-top: 1px solid rgb(248, 96, 228);
+    border-left: 1px solid rgb(98, 56, 250);
+    border-bottom:1px solid rgb(248, 96, 228);
+    border-right: 1px solid rgb(98, 56, 250);
+    overflow: hidden;
+    position: relative;
+}
+P{
+    text-align: center;
+    
+}
+h1{
+    text-align: center;
+}
+span{
+    text-align: center;
+}
+.top::first-letter{
+    float: left;
+    font-size: 70px;
+    line-height: 50px;
+    padding-top: 3px;
+    padding-right: 7px;
+    padding-left: 4px;
+
+}
+.top{
+    text-align: justify;
+    
+}
+h3{
+    text-align: center;
+   
+}
+.num{
+    border: 1px dotted;
+    width: 75%;
+    margin-left: 12%;
+    margin-bottom: 5%;
+   position: relative;
+   z-index: -1;
+    margin-top: -8%;
+    
+}
