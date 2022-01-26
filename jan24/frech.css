@@ -1,0 +1,12 @@
+td {
+    border: 2px solid #203b3f;
+    padding: 10px;
+    background-color: rgb(155, 153, 153);
+    
+  }
+  th{
+    border: 2px solid #3bb60b;
+    background-color: #203b3f;
+    color: #f00cbe;
+  }
+  

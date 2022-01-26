@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="frech.css"/>
+
+</head>
+<body>
+    <div id="container">   
+
+        <table id="table">
+            <tbody id="data">
+                <ul></ul>
+                <thead id="name">
+                <th> index</th>
+                <th> country</th>
+                <th>domains</th>
+                <th>Name</th>
+                <th> state_province</th>
+                <th>web_pages</th>
+                <th> alpha_two_code</th>
+                
+            </thead>
+        </tbody>    
+        </table>
+    </div>
+ <script > 
+        // var yourPromise = new Promise((res, rej) => {
+    // res("state-province");
+    // rej("sorry bhai aaj na hopaye");
+//   });
+     fetch("http://universities.hipolabs.com/search?country=india")
+       .then(res=>{
+           res.json().then(
+               data=>{
+                   console.table(data); 
+                   if(data.length>0){
+                       var ptr ="";
+                       data.forEach((e)=> {
+                           ptr +="<tr>";
+                            ptr+="<td>"+e.index+"</td>";
+                            ptr+="<td>"+e.country+"</td>";
+                            ptr+="<td>"+e.domains+"</td>";
+                            ptr+="<td>"+e.name+"</td>";
+                            ptr+="<td>"+e.state_province+"</td>";
+                            ptr+="<td>"+e.web_pages+"</td>";
+                            ptr+="<td>"+e.alpha_two_code+"</td>";
+                            
+                       });
+                       document.getElementById("data").innerHTML=ptr;
+                   }
+               }
+           )
+       })
+    </script>
+
+</body>
+</html>
