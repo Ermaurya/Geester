@@ -1,0 +1,88 @@
+/* *{ */
+    /* margin: 0; */
+    /* padding: 0; */
+/*      */
+/* } */
+/* body{ */
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* height: 100%; */
+    /* width: 100%; */
+    /* font-size: 15px; */
+    /* padding: 12px; */
+    /* border: 1px solid #d8e2ed; */
+    /* border-radius: 20px; */
+    /* margin: 10px 7px; */
+    /* box-shadow: 0 0 6px 2px #d8e2ed; */
+/* } */
+/* .main{ */
+    /* display: flex; */
+/* } */
+/* .cart{ */
+  /* margin-top: 6px; */
+/*  */
+/*  */
+/* } */
+/* .symbol, .prize, .count{ */
+    /* margin-top: 30px; */
+    /* padding-top: 15px; */
+/*  */
+/* } */
+
+
+/* *{ */
+    /* box-sizing: border-box; */
+/* } */
+/* body{ */
+    /* display: flex; */
+    /* flex-flow: row wrap; */
+/*      */
+    /* } */
+/* ul{ */
+    /* background-image: linear-gradient(to right,#7b4397,#dc2430); */
+    /* text-decoration: none; */
+    /* height: 200px; */
+/*      */
+/*    */
+/* } */
+/* li{ */
+    /* color: rgb(24, 10, 10); */
+/*      */
+/* } */
+/* ul:hover{ */
+    /* border: 1px solid; */
+    /* background-image: linear-gradient(black,purple); */
+/*     */
+/* } */
+
+
+#cont{
+   background-color: rgb(199, 198, 198);
+    margin: -95px;
+    padding: 100px;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: rgb(81, 255, 0);
+    font-size: 18px;
+   
+}
+div{
+    margin: 9px;
+    background-color: rgb(180, 11, 107);
+    width: 280px;
+    height: 400px;
+    border-radius: 15px;
+    padding: 12px;
+    cursor: pointer;
+    box-shadow: 0 0 7px 7px #0c5aad;
+}
+div:hover{
+    background-color: rgb(88, 15, 161);
+    color: rgb(54, 233, 10);
+    font-size: 18px;
+    box-shadow: none;
+}
+
+
