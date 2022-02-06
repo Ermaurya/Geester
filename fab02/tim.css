@@ -1,0 +1,77 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background: #1d2630;
+}
+
+p{
+    color: rgb(21, 255, 0);
+    font-size: 35px;
+    margin-top: 20px;
+} 
+
+body{
+  font-family: 'Roboto';
+  background: #151515;
+}
+.progress-bar{
+  width: 302px;
+  height: 20px;
+  background: #111;
+  border-radius: 13px;
+  margin-top: 45px;
+  padding: 3px;
+  box-sizing: border-box;
+  fill: transparent;
+}
+.progress{
+  width: 0px;
+  height: 16px;
+  background: #f60d54;
+  border-radius: 13px;
+}
+
+button{
+  background-color: #222242;
+  margin-top: 50px;
+    padding: 10px 38px;
+    border: 1px solid #A9A9A9;
+    border-radius: 28px;
+    color: #fff;
+    transition: all .2s ease;
+    outline: 0;
+}
+button:not(:last-child){
+    margin-right: 20px;
+}
+button:hover,
+button:focus
+{
+    border-color: #F6B400;
+    color: #F6B400;
+    box-shadow: 0px 4px 27px -12px #F6B400;
+}
+
+.animated {
+	font-size: 42px;
+	font-family: Arial Black, Gadget, sans-serif;
+	background-image: -webkit-linear-gradient(left, #f00, #ff2b00, #f50, #ff8000, #fa0, #ffd500, #ff0, #d4ff00, #af0, #80ff00, #5f0, #2bff00, #0f0, #00ff2a, #0f5, #00ff80, #0fa, #00ffd5, #0ff, #00d5ff, #0af, #0080ff, #05f, #002aff, #00f, #2b00ff, #50f, #8000ff, #a0f, #d400ff, #f0f, #ff00d4, #f0a, #ff0080, #f05, #ff002b, #f00);
+	-webkit-animation: animatedBackground_a 5s linear infinite alternate;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: #0000;
+	background-clip: text;
+}
+
+@keyframes animatedBackground_a {
+	0% { background-position: 0 0 }
+	100% { background-position: -500px 0 }
+}
+
+
