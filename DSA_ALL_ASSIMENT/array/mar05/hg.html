@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <body>
+       
+        <script>
+
+           
+            var elem = new Array(3);
+            
+           
+            document.write(" 2D array is:~ <br>");
+            for (var i = 0; i < elem.length; i++) {
+                elem[i] = [];
+            }
+            var h = 0;
+            var s = "shubhamcs";
+            
+           
+            for (var i = 0; i < 3; i++) {
+                for (var j = 0; j < 3; j++) {
+            
+                    elem[i][j] = s[h++];
+                }
+            }
+            
+           
+            for (var i = 0; i < 3; i++) {
+                for (var j = 0; j < 3; j++)
+            
+                {
+                    document.write(elem[i][j] + " ");
+                }
+                document.write("<br>");
+            }
+            
+            </script>					
+            
+    </body>
+</html>
