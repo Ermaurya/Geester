@@ -1,38 +1,23 @@
-public class onlyeven{
 
-static void Even(int L,int R)
-{
-// Base case
-if (R < L)
-{
-	return;
+
+import java.util.Scanner;
+
+public class onlyeven {
+    static int even(int num1, int num2)
+	{
+		   if(num1>num2)
+		    return 0;
+		   System.out.print(num1+" ");
+           return even(num1+2,num2);
+		}
+		public static void main(String[] args) {
+           Scanner crs=new Scanner(System.in);
+		    int num1=2,num2;
+		    System.out.print("Enter your Limit:");
+		    num2=crs.nextInt();
+		    System.out.print("All Even number given range are:");
+		    even(num1,num2);
+	        crs.close();
+		}
+    
 }
-
-// Recurrence relation
-if(R % 2 == 0 )
-	Even(L, R - 2);
-else
-	Even(L, R + 1);
-
-// Check if R is even
-if (R % 2 == 0)
-{
-	System.out.print(R + " ");
-}
-}
-
-
-
-// Driver Code
-public static void main(String[] args)
-{
-int L = 10,R=50;
-System.out.print("Even numbers:");
-Even(L, R);
-System.out.println();
-
-}
-}
-
-
-
