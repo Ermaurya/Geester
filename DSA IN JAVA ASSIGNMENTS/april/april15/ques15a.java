@@ -1,4 +1,3 @@
-
 package assim2;
 
 public class ques15a {
@@ -8,14 +7,14 @@ public class ques15a {
 			          {7,8,9}};
 	    int m = arr.length;
 	    int n = arr[0].length;
-	     transpose(arr,m,n);
+	     chang(arr,m,n);
 	     System.out.println("Sawp");
-	     swapCols(arr,m,n);
+	     swap(arr,m,n);
 	     printMatrix(arr,m,n);
 
 	}
 	
-	private static void transpose(int[][] arr, int m, int n) {
+	private static void chang(int[][] arr, int m, int n) {
 		for(int i=0; i<m; i++) {
 			for(int j=i; j<n; j++) {
 				int temp = arr[i][j];
@@ -26,7 +25,7 @@ public class ques15a {
 	}
 
 	
-	private static void swapCols(int[][] arr, int m, int n) {
+	private static void swap(int[][] arr, int m, int n) {
 		for(int i=0; i<m/2; i++) {
 			for(int j=0; j<n; j++) {
 				int temp = arr[i][j];
