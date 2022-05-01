@@ -1,58 +1,71 @@
 package assimnt4;
-class Node
-{
-    int data;
-    Node next, prev;
-    Node(int val)
-    {
-        data = val;
-        next = null;
-        prev = null;
-    }
-}
-public class ques27a{
-class GFG
-{
-    
-    /* Function to add a node to front of doubly
-    linked list */
-    static Node push(Node head, int data)
-    {
-        Node new_node = new Node(data);
-        new_node.next = head;
-        new_node.prev = null;
-        if (head != null)
-        head.prev = new_node;
-        head = new_node;
-        
-        return head;
-    }
-    
-    // This function returns size of doubly linked list
-    static int findSize(Node node)
-    {
-        int res = 0;
-        while (node != null)
-        {
-            res++;
-            node = node.next;
-        }
-        
-        return res;
-    }
-}
-    
-    // Driver Code
-    // public class ques27a {
-    public static void main(String args[])
-    {
-        Node head = null;
-        head = push(head, 4);
-        head = push(head, 3);
-        head = push(head, 2);
-        head = push(head, 1);
-        System.out.println(findSize(head));
-    }
+ public class AddFirstElement {
+	static DNode head;
+
+	public static void main(String[] args) {
+		addFirst(30);
+		addFirst(20);
+		addFirst(10);
+		addlast(35);
+		System.out.println("Count = " + getCount());
+		display();
+
+	}
+	public static void addlast(int data) {
+		DNode d = new DNode(data);
+		if(head == null) {
+			head = d;
+		}
+		else {
+			DNode cur = head;
+			while(cur.right != null) {
+				cur = cur.right;
+			}
+			cur.right = d;
+			d.left = cur;
+		}
+		
+	}
+	public static void addFirst(int data) {
+		DNode d = new DNode(data);
+		if(head == null) {
+			head = d;
+			return;
+		}
+		else
+		{
+			d.right = head;
+			head.left = d;
+			head = d;
+		}
+	}
+	public static int getCount() {
+		int count = 0;
+		DNode cur = head;
+		while(cur != null) {
+			if(cur.data > 0) {
+				count++;
+			}
+			cur = cur.right;
+		}
+		return count;
+		
+	}
+	public static void display() {
+		if(head == null) {
+			System.out.println("List is Empty ! ");
+			return;
+		}
+		else {
+			DNode cur = head;
+			while(cur != null) {
+				System.out.print(cur.data + " ");
+				cur = cur.right;
+			}
+			System.out.println();
+		}
+	}
+
 }
  
     
