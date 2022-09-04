@@ -1,4 +1,6 @@
-
+//The useMemo Hook can be used to keep expensive, resource intensive functions from needlessly running.
+//In this example, we have an expensive function that runs on every render. When changing the count or adding a todo, you will notice a delay in execution.
+//Example=>:
 
 import './App.css';
 import React, {useState} from 'react';
