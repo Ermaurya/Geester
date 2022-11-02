@@ -1,0 +1,19 @@
+*{
+  margin: 10px;
+}
+.main{
+  border: 1px solid black;
+  border-left: 3px solid black;
+  border-top: 3px solid black;
+  margin: 20px;
+}
+p{
+  width:95%;
+
+}
+.hrs{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: aqua;
+  border: 4px solid rgb(0, 0, 0);
+  /* margin: 20px; */
+}
