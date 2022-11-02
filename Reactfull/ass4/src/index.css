@@ -1,0 +1,32 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.text{
+  display: inline-block;
+  height: 30%;
+  width: 15%;
+  /* border: 2px solid blue; */
+  box-shadow: 1px 1px 2px 2px rgb(218, 218, 218);
+  margin: 20px;
+}
+
+
+.text.color_box{ 
+  /* border: 2px solid rgb(12, 14, 12); */
+  width: 50% ;
+  height: 40% ;
+}
+
+.color-data{
+  width: 15%;
+  height: 15%;
+  /* border: 2px solid black; */
+ 
+}
+p,h5{
+  /* padding: 10px; */
+  margin: 10px;
+}
